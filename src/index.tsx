@@ -2,12 +2,12 @@ import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
-import './index.css';
+import './normalize.css';
+import './style.css';
 import Root from './routes/root';
 import ErrorPage from './error/error-page';
 import Home from './home/home';
 import About from './about/about';
-
 
 const router = createBrowserRouter([
   {

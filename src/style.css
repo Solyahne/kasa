@@ -1,0 +1,17 @@
+@font-face {
+	font-family: Montserrat;
+	src: url('./assets/Montserrat-VariableFont_wght.ttf');
+}
+
+html
+{
+	font-family: 'Montserrat', sans-serif;
+	/* Set border-box as the global default */
+	box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+	/* Allow each element to override */
+	box-sizing: inherit;
+}
