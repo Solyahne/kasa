@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 100px 0 100px;
+}
+
+a {
+    color: #FF6060;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 57px;
+    font-size: 24px;
+}
+
+.link-active {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin: 20px 20px 16px 20px;
+    }
+
+    .logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    nav a {
+        font-size: 12px;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+
+    .link-active {
+        text-decoration-thickness: 0.5px;
+        text-underline-offset: 1px;
+    }
+}
