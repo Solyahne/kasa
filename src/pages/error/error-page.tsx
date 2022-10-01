@@ -12,7 +12,7 @@ export default function ErrorPage() {
             <Header />
             <div className="errormsg">
                 <h1 className="error">404</h1>
-                <p className="oups">Oups! La page que vous demandez n'existe pas.</p>
+                <p className="oups">Oups! La page que<br className='breakpointmobile'></br> vous demandez n'existe pas.</p>
                 <Link to='/' className="backtohome">Retourner sur la page d'accueil</Link>
             </div>
         </div>
