@@ -1,9 +1,10 @@
+import BannerHome from '../../components/bannerhome';
 import './home.css';
 
 export default function Home() {
   return (
-    <div className="App">
-Pouet ! 
-    </div>
+    <main>
+      <BannerHome />
+    </main>
   );
 }

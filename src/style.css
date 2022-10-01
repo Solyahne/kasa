@@ -16,3 +16,9 @@ html
 	/* Allow each element to override */
 	box-sizing: inherit;
 }
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
