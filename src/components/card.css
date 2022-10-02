@@ -1,0 +1,23 @@
+.cardlogement {
+    background-color: #FF6060;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}
+
+.cardlogement::before {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    width: 340px; height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.cardlogement p {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    top: 268px; 
+    left: 20px;
+    width: 40%;
+}
