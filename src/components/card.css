@@ -1,23 +1,32 @@
-.cardlogement {
-    background-color: #FF6060;
+.cardcover {
     width: 340px;
     height: 340px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
-.cardlogement::before {
+.cardlogement {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cardlogement::after {
     content: '';
     border-radius: 10px;
     position: absolute;
-    width: 340px; height: 340px;
+    top: 0;
+    left: 0;
+    width: 340px;
+    height: 340px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .cardlogement p {
     color: white;
     font-size: 18px;
-    position: relative;
-    top: 268px; 
-    left: 20px;
-    width: 40%;
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 5%;
+    width: 60%;
 }

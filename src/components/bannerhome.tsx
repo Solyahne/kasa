@@ -5,8 +5,8 @@ import './banner.css';
 export default function BannerHome() {
     return (
         <div className='banneroverlay'>
-            <img src={Banner} alt="Une photo de paysage" className='banner'/>
-            <img src={BannerMobile} alt="Une photo de paysage" className='bannermobile'/>
+            <img src={Banner} alt="Paysage rocheux au bord de mer" className='banner'/>
+            <img src={BannerMobile} alt="Paysage rocheux au bord de mer" className='bannermobile'/>
             <p>Chez vous,<br className='breakpointmobile'></br> partout et ailleurs</p>
         </div>
     )

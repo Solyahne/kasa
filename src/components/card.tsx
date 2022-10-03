@@ -1,13 +1,18 @@
+import { Link } from 'react-router-dom'
 import './card.css'
 
-export default function Card() {
+interface CardProps {
+    title: string
+    cover: string
+}
+
+export default function Card({ cover, title }: CardProps) {
     return (
-        <div className='cardoverlay'>
         <article className='cardlogement'>
-            <p>
-                Titre de la location
-            </p>
+                <img src={cover} alt='' className='cardcover' />
+                <p>
+                    {title}
+                </p>
         </article>
-        </div>
     )
 }

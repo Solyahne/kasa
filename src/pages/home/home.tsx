@@ -1,12 +1,12 @@
 import BannerHome from '../../components/bannerhome';
-import Card from '../../components/card';
+import CardList from '../../components/cardlist';
 import './home.css';
 
 export default function Home() {
   return (
     <main>
       <BannerHome />
-      <Card />
+      <CardList />
     </main>
   );
 }
