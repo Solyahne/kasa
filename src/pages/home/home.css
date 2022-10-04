@@ -11,6 +11,22 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 85%;
-  margin-top: 43px;
-  padding: 56px 50px 56px 50px;
+  margin: 43px 0 50px 0;
+  padding: 56px 50px 10px 50px;
+}
+
+@media screen and (min-width: 778px) and (max-width: 992px) {
+  .cardlist {
+    justify-content: space-evenly;
+    padding: 43px 15px 43px 15px;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .cardlist {
+    background-color: white;
+    justify-content: space-around;
+    padding: 30px 15px 30px 15px;
+    margin: 0 0 22px 0;
+  }
 }

@@ -18,7 +18,7 @@
     left: 0;
     width: 340px;
     height: 340px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 .cardlogement p {
@@ -29,4 +29,41 @@
     top: 70%;
     left: 5%;
     width: 60%;
+}
+
+@media screen and (min-width: 778px) and (max-width: 992px) {
+    .cardcover {
+        width: 290px;
+        height: 290px;
+    }
+
+    .cardlogement::after {
+        width: 290px;
+        height: 290px;
+    }
+
+    .cardlogement p {
+        top: 67%;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .cardcover {
+        width: 335px;
+        height: 255px;
+    }
+
+    .cardlogement {
+        margin-bottom: 20px;
+    }
+
+    .cardlogement::after {
+        width: 335px;
+        height: 255px;
+    }
+
+    .cardlogement p {
+        width: 80%;
+    }
 }

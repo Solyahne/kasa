@@ -5,7 +5,7 @@ import './banner.css';
 export default function BannerAbout() {
     return (
         <div className='banneroverlay overlayabout' >
-            <img src={Banner} alt="Un paysage montagneux" className='banner'/>
+            <img src={Banner} alt="Un paysage montagneux" className='bannerimg'/>
             <img src={BannerMobile} alt="Un paysage montagneux" className='bannermobile'/>
         </div>
     )
