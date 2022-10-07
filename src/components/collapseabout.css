@@ -30,3 +30,27 @@
     margin-top: 0;
     width: 100%; 
 }
+
+@media screen and (max-width: 777px) {
+
+    .aboutelements {
+        width: 100%;
+        max-width: 334px;
+    }
+
+    .collapse {
+        width: 335px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .arrow {
+        height: 9px;
+        width: 15px;
+    }
+
+    .collapsecontent {
+        font-size: 12px;
+    }
+}

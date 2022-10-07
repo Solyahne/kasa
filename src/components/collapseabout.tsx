@@ -22,7 +22,7 @@ export default function CollapseAbout({ title, content }: CollapseElements) {
     return (
         <article className="aboutelements">
             <button onClick={show} className='collapse'>{title}
-                {open ? <img src={arrowtop} alt='' /> : <img src={arrowbottom} alt='' className='arrowbottom'/>}
+                {open ? <img src={arrowtop} alt='' className='arrow' /> : <img src={arrowbottom} alt='' className='arrowbottom arrow'/>}
             </button>
             {/* Si le bouton est ouvert (usestate true), alors on affiche le paragraphe */}
             {open &&
