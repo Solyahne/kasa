@@ -4,7 +4,7 @@ import Header from "../pages/header/header";
 
 export default function Root() {
     return (
-        <div>
+        <div className="globalcontainer">
             <Header />
             <div>
                 <Outlet />
