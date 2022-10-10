@@ -1,7 +1,7 @@
 import logo from '../../assets/logofooter.svg';
 import './footer.css';
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
     return (
         <footer>
             <img src={logo} alt="Logo Kasa" className="logofooter" />

@@ -27,9 +27,13 @@ const router = createBrowserRouter([
       {
         path: "/logement/:idlogement",
         element: <Logement />
-      }
+      } 
     ],
   },
+  {
+      path: 'errorpage',
+      element: <ErrorPage />
+  }
 ]);
 
 const root = ReactDOM.createRoot(

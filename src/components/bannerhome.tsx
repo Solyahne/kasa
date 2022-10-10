@@ -2,7 +2,7 @@ import Banner from '../assets/homebanner.jpg';
 import BannerMobile from '../assets/homebannermobile.jpg'
 import './banner.css';
 
-export default function BannerHome() {
+export default function BannerHome(): JSX.Element {
     return (
         <div className='banneroverlay'>
             <img src={Banner} alt="Paysage rocheux au bord de mer" className='bannerimg'/>

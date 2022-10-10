@@ -1,8 +1,7 @@
 import logements from "../data/logements.json";
 import Card from "./card";
 
-export default function CardList() {
-
+export default function CardList(): JSX.Element {
     return (
         <section className="cardlist">
             {logements.map((element) => (

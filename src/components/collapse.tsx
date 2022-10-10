@@ -9,8 +9,7 @@ interface CollapseElements {
     content: string
 }
 
-
-export default function CollapseAbout({ title, content }: CollapseElements) {
+export default function CollapseAbout({ title, content }: CollapseElements): JSX.Element {
 
     //Définition du statut de base des boutons (fermés, donc false)
     const [open, setOPen] = useState(false);

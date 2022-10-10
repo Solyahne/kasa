@@ -1,4 +1,4 @@
-import CollapseAbout from "../../components/collapseabout";
+import CollapseAbout from "../../components/collapse";
 import BannerAbout from "../../components/bannerabout";
 import './about.css';
 
@@ -23,7 +23,7 @@ const aboutContent = [
 ]
 
 //Création des éléments de la page à propos
-export default function About() {
+export default function About(): JSX.Element {
   return (
     <main className="aboutmain">
       <BannerAbout />

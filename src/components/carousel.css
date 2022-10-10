@@ -1,0 +1,23 @@
+.carouselimg {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.carouselelements {
+    width: 1200px;
+    position: relative;
+    bottom: 270px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.bulletpoint { 
+    position: relative;
+    top: 185px;
+    font-size: 18px;
+}

@@ -7,7 +7,7 @@ interface CardProps {
     idLink: string
 }
 
-export default function Card({ cover, title, idLink }: CardProps) {
+export default function Card({ cover, title, idLink }: CardProps): JSX.Element {
     return (
         <Link to={`logement/${idLink}`}>
         <article className='cardlogement'>

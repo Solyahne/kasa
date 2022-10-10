@@ -19,6 +19,7 @@
 .backtohome {
     font-size: 18px;
     text-decoration: underline;
+    color: #FF6060;
 }
 
 @media screen and (max-width: 768px) {
