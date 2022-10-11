@@ -21,3 +21,37 @@
     top: 185px;
     font-size: 18px;
 }
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .carouselimg {
+        width: 868px;
+        height: 291px;
+    }
+    .carouselelements {
+        width: 840px;
+        bottom: 189px;
+        left: 15px;
+    }
+    .bulletpoint {
+        top: 115px;
+    }
+}
+
+@media screen and (min-width: 778px) and (max-width: 991px) {
+    .carouselimg {
+        width: 694px;
+        height: 232px;
+    }
+    .carouselelements {
+        width: 672px;
+        bottom: 151px
+    }
+    .bulletpoint {
+        top: 85px;
+        font-size: 16px;
+    }
+    .arrow {
+        height: 45px;
+        
+    }
+}
