@@ -31,7 +31,10 @@ export default function About(): JSX.Element {
         <CollapseAbout
           key={index}
           title={aboutelement.title}
-          content={aboutelement.content} />
+          content={aboutelement.content}
+          titleclass='collapse' 
+          contentclass='collapse_content'
+          isAList={false}/>
       ))}
     </main>
   )

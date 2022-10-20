@@ -1,4 +1,4 @@
-import './collapseabout.css'
+import './collapse.css'
 import arrowbottom from '../assets/arrowbottom.svg'
 import arrowtop from '../assets/arrowtop.svg'
 import { useState } from "react"
@@ -6,10 +6,14 @@ import { useState } from "react"
 //Déclaration des types
 interface CollapseElements {
     title: string
-    content: string
+    content?: string
+    listequipements?: string[]
+    titleclass: string
+    contentclass: string
+    isAList: boolean
 }
 
-export default function CollapseAbout({ title, content }: CollapseElements): JSX.Element {
+export default function Collapse({ title, content, listequipements, titleclass, contentclass, isAList }: CollapseElements): JSX.Element {
 
     //Définition du statut de base des boutons (fermés, donc false)
     const [open, setOPen] = useState(false);
@@ -18,16 +22,26 @@ export default function CollapseAbout({ title, content }: CollapseElements): JSX
         setOPen(!open);
     };
 
+    const list = { isAList }
+
     return (
-        <article className="aboutelements">
-            <button onClick={show} className='collapse'>{title}
-                {open ? <img src={arrowtop} alt='' className='arrow' /> : <img src={arrowbottom} alt='' className='arrowbottom arrow'/>}
+        <article className="about_elements">
+            <button onClick={show} className={titleclass}>{title}
+                {open ? <img src={arrowtop} alt='' className='arrow' /> : <img src={arrowbottom} alt='' className='arrowbottom arrow' />}
             </button>
-            {/* Si le bouton est ouvert (usestate true), alors on affiche le paragraphe */}
-            {open &&
-                (<p className='collapsecontent'>{content}
+            {/* Si le bouton est ouvert (usestate true), et que c'est une liste, on affiche les éléments sous forme de liste
+            Sinon, on affiche le paragraphe */}
+            {open && (isAList ?
+                (<li className={contentclass}>
+                    {listequipements?.map((element, index) => {
+                        return (<ul key={index}>{element}</ul>)
+                    })}
+                </li>)
+                :
+                (<p className={contentclass}>
+                    {content}
                 </p>)
-            }
+            )}
         </article>
     )
 }

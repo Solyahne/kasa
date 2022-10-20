@@ -20,9 +20,10 @@
     position: relative;
     top: 185px;
     font-size: 18px;
+    text-shadow: 1px 2px 5px #000000;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 993px) and (max-width: 1400px) {
     .carouselimg {
         width: 868px;
         height: 291px;
@@ -37,7 +38,7 @@
     }
 }
 
-@media screen and (min-width: 778px) and (max-width: 991px) {
+@media screen and (min-width: 778px) and (max-width: 992px) {
     .carouselimg {
         width: 694px;
         height: 232px;
@@ -53,5 +54,24 @@
     .arrow {
         height: 45px;
         
+    }
+}
+
+@media screen and (max-width : 991px) {
+    .carouselimg {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+    .carouselelements {
+        width: 330px;
+        bottom: 140px;
+        left: 3px;
+    }
+    .bulletpoint {
+        display: none;
+    }
+    .arrow {
+        height: 19px;
     }
 }
