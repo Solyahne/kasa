@@ -35,14 +35,18 @@
     margin-top: 0;
     width: 100%; 
     border-radius: 5px;
+    font-weight: 400;
 }
 
 .collapse_description_home {
     width: 56%;
+    font-size: 18px;
 }
 
 .collapse_content_home {
     width: 56%;
+    list-style: none;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 777px) {

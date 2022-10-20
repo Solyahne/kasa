@@ -22,8 +22,6 @@ export default function Collapse({ title, content, listequipements, titleclass, 
         setOPen(!open);
     };
 
-    const list = { isAList }
-
     return (
         <article className="about_elements">
             <button onClick={show} className={titleclass}>{title}

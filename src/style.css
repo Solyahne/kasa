@@ -9,6 +9,7 @@ html
 	/* Set border-box as the global default */
 	box-sizing: border-box;
 	line-height: 142.6%;
+	font-weight: 500;
 }
 
 *, *:before, *:after

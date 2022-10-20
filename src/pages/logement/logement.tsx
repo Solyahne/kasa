@@ -1,4 +1,5 @@
 import { Navigate, useParams } from 'react-router-dom';
+import './logement.css';
 import logements from '../../data/logements.json';
 import Carousel from "../../components/carousel";
 import Tag from '../../components/tag';
@@ -29,14 +30,14 @@ export default function Logement(): JSX.Element {
     let rating = logementFound?.rating as string;
 
     return (
-        <main>
+        <main className='logement_main'>
             {!logementFound && <Navigate to='/errorpage' />}
             <Carousel pictures={pictures} />
-            <h1 className='title'>{title}</h1>
+            <h1 className='logement_title'>{title}</h1>
             <p className='location'>{location}</p>
             <div className='host'>
                 <p className='hostname'>{hostname}</p>
-                <img src={hostpicture} alt="Photographie de l'hôte" />
+                <img src={hostpicture} alt="Photographie de l'hôte" className='host_picture'/>
             </div>
             <Tag tags={tags} />
             <Stars starvalue={rating} />
