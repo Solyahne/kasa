@@ -1,6 +1,21 @@
 .logement_main {
     padding: 25px 0 150px 0;
     color: #FF6060;
+    display: flex;
+}
+
+.container_first_row {
+    display: flex;
+    flex-direction: row;
+    max-width: 1240px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container_tags {
+    display: flex;
+    flex-direction: row;
 }
 
 .logement_title {
@@ -11,8 +26,24 @@
     font-size: 18px;
 }
 
-.host {
+.container_droite {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_host {
     font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container_stars {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hostname {
+    width: 50%;
 }
 
 .host_picture {
@@ -22,8 +53,94 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 777px) { 
+.container_collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1240px;
+}
+
+@media screen and (min-width: 778px) and (max-width: 992px) {
+
+    .logement_main {
+        padding-top: 50px;
+    }
+
+    .container_collapse {
+        flex-direction: column;
+        max-width: 694px;
+    }
+
+    .logement_title {
+        font-size: 30px;
+        margin: -5px 0 -5px 0;
+    }
+
+    .container_first_row {
+        flex-direction: column;
+        max-width: 694px;
+    }
+
+    .container_droite {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 777px) {
+
+    .logement_main {
+        padding-top: 10px;
+    }
+
+    .container_first_row {
+        flex-direction: column;
+        max-width: 335px;
+    }
+
+    .container_droite {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .container_collapse {
+        flex-direction: column;
+        max-width: 335px;
+    }
+
+    .logement_title {
+        font-size: 18px;
+        margin: -15px 0 -5px 0;
+    }
+
+    .location {
+        font-size: 14px;
+    }
+
     .logement_main {
         padding-bottom: 100px;
+    }
+
+    .container_host {
+        align-items: center;
+    }
+
+    .hostname {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .host_picture {
+        width: 32px;
+        height: 32px;
+    }
+
+    .stars {
+        width: 15px;
+        height: 15px;
     }
 }

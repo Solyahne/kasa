@@ -1,3 +1,7 @@
+.carousel {
+    height: 415px;
+}
+
 .carouselimg {
     width: 1240px;
     height: 415px;
@@ -39,6 +43,9 @@
 }
 
 @media screen and (min-width: 778px) and (max-width: 992px) {
+    .carousel {
+        height: 232px;
+    }
     .carouselimg {
         width: 694px;
         height: 232px;
@@ -53,11 +60,13 @@
     }
     .arrow {
         height: 45px;
-        
     }
 }
 
-@media screen and (max-width : 991px) {
+@media screen and (max-width : 777px) {
+    .carousel {
+        height: 255px;
+    }
     .carouselimg {
         width: 335px;
         height: 255px;

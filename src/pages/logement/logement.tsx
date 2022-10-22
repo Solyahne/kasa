@@ -33,18 +33,30 @@ export default function Logement(): JSX.Element {
         <main className='logement_main'>
             {!logementFound && <Navigate to='/errorpage' />}
             <Carousel pictures={pictures} />
-            <h1 className='logement_title'>{title}</h1>
-            <p className='location'>{location}</p>
-            <div className='host'>
-                <p className='hostname'>{hostname}</p>
-                <img src={hostpicture} alt="Photographie de l'hôte" className='host_picture'/>
+            <div className='container_first_row'>
+                <div className='container_gauche'>
+                    <h1 className='logement_title'>{title}</h1>
+                    <p className='location'>{location}</p>
+                    <div className='container_tags'>
+                        <Tag tags={tags} />
+                    </div>
+                </div>
+                <div className='container_droite'>
+                    <div className='container_host'>
+                        <p className='hostname'>{hostname}</p>
+                        <img src={hostpicture} alt="Photographie de l'hôte" className='host_picture' />
+                    </div>
+                    <Stars starvalue={rating} />
+                </div>
             </div>
-            <Tag tags={tags} />
-            <Stars starvalue={rating} />
-            <Collapse title='Description' content={description}
-                titleclass='collapse collapse_home' contentclass='collapse_content collapse_description_home' isAList={false} />
-            <Collapse title='Equipements' listequipements={equipments}
-                titleclass='collapse collapse_home' contentclass='collapse_content collapse_content_home' isAList={true} />
+            <div className='container_collapse'>
+                <Collapse title='Description' content={description}
+                    titleclass='collapse collapse_home' contentclass='collapse_content collapse_description_home'
+                    articleclass='home_collapse_elements' isAList={false} />
+                <Collapse title='Equipements' listequipements={equipments}
+                    titleclass='collapse collapse_home' contentclass='collapse_content collapse_content_home'
+                    articleclass='home_collapse_elements' isAList={true} />
+            </div>
         </main>
     )
 };

@@ -34,6 +34,7 @@ export default function About(): JSX.Element {
           content={aboutelement.content}
           titleclass='collapse' 
           contentclass='collapse_content'
+          articleclass='collapse_elements'
           isAList={false}/>
       ))}
     </main>

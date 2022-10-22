@@ -10,10 +10,11 @@ interface CollapseElements {
     listequipements?: string[]
     titleclass: string
     contentclass: string
+    articleclass: string
     isAList: boolean
 }
 
-export default function Collapse({ title, content, listequipements, titleclass, contentclass, isAList }: CollapseElements): JSX.Element {
+export default function Collapse({ title, content, listequipements, titleclass, contentclass, articleclass, isAList }: CollapseElements): JSX.Element {
 
     //Définition du statut de base des boutons (fermés, donc false)
     const [open, setOPen] = useState(false);
@@ -23,9 +24,9 @@ export default function Collapse({ title, content, listequipements, titleclass, 
     };
 
     return (
-        <article className="about_elements">
+        <article className={articleclass}>
             <button onClick={show} className={titleclass}>{title}
-                {open ? <img src={arrowtop} alt='' className='arrow' /> : <img src={arrowbottom} alt='' className='arrowbottom arrow' />}
+                {open ? <img src={arrowtop} alt='' className='collapse_arrow' /> : <img src={arrowbottom} alt='' className='collapse_arrow' />}
             </button>
             {/* Si le bouton est ouvert (usestate true), et que c'est une liste, on affiche les éléments sous forme de liste
             Sinon, on affiche le paragraphe */}

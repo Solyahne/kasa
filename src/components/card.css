@@ -8,6 +8,8 @@
 .cardlogement {
     position: relative;
     margin-bottom: 50px;
+    height: 340px;
+    border-radius: 10px;
 }
 
 .cardlogement::after {
@@ -21,12 +23,17 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0.7) 100%);
 }
 
+.cardlogement:hover {
+    box-shadow: 0px 10px 17px -5px #8f8f8f;
+    transition: all 0.3s ease-in-out;
+}
+
 .cardlogement p {
     color: white;
     font-size: 18px;
     position: absolute;
     z-index: 2;
-    top: 70%;
+    top: 72%;
     left: 5%;
     width: 60%;
 }

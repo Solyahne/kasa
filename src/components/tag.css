@@ -6,9 +6,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .tagtext {
     color: white;
+    width: 95%;
     font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+@media screen and (max-width: 777px) {
+    .tag {
+        width: 84px;
+        height: 18px;
+        margin-top: -6px;
+        border-radius: 5px;
+    }
+
+    .tagtext {
+        font-size: 10px;
+    }
 }
