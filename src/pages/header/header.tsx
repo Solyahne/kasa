@@ -17,7 +17,7 @@ export default function Header(): JSX.Element {
                 </NavLink>
 
                 <NavLink to={'/about'}
-                    className={({ isActive, isPending }) =>
+                    className={({ isActive }) =>
                         isActive
                             ? "link-active" : ""}
                 >

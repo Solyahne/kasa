@@ -24,8 +24,8 @@
 }
 
 .cardlogement:hover {
-    box-shadow: 0px 10px 17px -5px #8f8f8f;
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 17px -3px rgba(131,131,131,0.61);
+    transition: all 0.2s ease-in-out;
 }
 
 .cardlogement p {
@@ -41,6 +41,10 @@
 @media screen and (min-width: 778px) and (max-width: 992px) {
     .cardcover {
         width: 290px;
+        height: 290px;
+    }
+
+    .cardlogement {
         height: 290px;
     }
 
@@ -63,6 +67,7 @@
 
     .cardlogement {
         margin-bottom: 20px;
+        height: 255px;
     }
 
     .cardlogement::after {
