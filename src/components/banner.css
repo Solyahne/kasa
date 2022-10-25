@@ -13,12 +13,16 @@
     margin-top: 66px;
 }
 
-.banneroverlay p {
+.classtext {
     color: white;
     font-size: 48px;
     position: relative;
     bottom: 80%;
     text-align: center;
+}
+
+.notext {
+    display: none;
 }
 
 .breakpointmobile {
@@ -35,7 +39,7 @@
         max-width: 85%;
     }
 
-    .banneroverlay p {
+    .classtext {
         font-size: 32px;
     }
 }
@@ -67,7 +71,7 @@
         height: 223px;
     }
 
-    .banneroverlay p {
+    .classtext {
         font-size: 24px;
         text-align: start;
         left: 5%;

@@ -1,5 +1,7 @@
 import CollapseAbout from "../../components/collapse";
-import BannerAbout from "../../components/bannerabout";
+import Banner from '../../components/banner';
+import bannerimg from '../../assets/aboutbanner.jpg';
+import bannermobile from '../../assets/aboutbannermobile.jpg';
 import './about.css';
 
 //Contenu des composants de la page A propos
@@ -26,7 +28,11 @@ const aboutContent = [
 export default function About(): JSX.Element {
   return (
     <main className="aboutmain">
-      <BannerAbout />
+      <Banner
+      banner={bannerimg}
+      banneralt='Un paysage montagneux'
+      bannermobile={bannermobile}
+      classtext='classtext' />
       {aboutContent.map((aboutelement, index) => (
         <CollapseAbout
           key={index}
