@@ -1,4 +1,4 @@
-import CollapseAbout from "../../components/collapse";
+import Collapse from "../../components/collapse";
 import Banner from '../../components/banner';
 import bannerimg from '../../assets/aboutbanner.jpg';
 import bannermobile from '../../assets/aboutbannermobile.jpg';
@@ -32,9 +32,9 @@ export default function About(): JSX.Element {
       banner={bannerimg}
       banneralt='Un paysage montagneux'
       bannermobile={bannermobile}
-      classtext='classtext' />
+      classtext='notext' />
       {aboutContent.map((aboutelement, index) => (
-        <CollapseAbout
+        <Collapse
           key={index}
           title={aboutelement.title}
           content={aboutelement.content}

@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
         banner={bannerimg}
         bannermobile={bannermobile}
         banneralt='Paysage rocheux au bord de mer'
-        classtext='notext'
+        classtext='classtext'
       />
       <CardList />
     </main>

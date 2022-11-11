@@ -30,13 +30,7 @@ export default function Carousel({ pictures }: CarouselElement): JSX.Element {
         <article className="carousel">
             {pictures.map((image, index) => {
                 return (
-                    <div
-                        key={index}
-                        className= {
-                            index === currentImg
-                                ? "activeimg"
-                                : "inactiveimg"
-                        }>
+                    <div key={index}>
                         {index === currentImg && (
                             <img src={image} alt='' className='carouselimg' />
                         )}
